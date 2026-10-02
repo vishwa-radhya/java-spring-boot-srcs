@@ -1,5 +1,6 @@
 package com.example.demo.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -7,6 +8,7 @@ import jakarta.validation.constraints.Size;
 public class StudentRequest {
 
     // @NotBlank 
+    @Schema(description = "Student's full name")
     @NotBlank(message = "Name must not be blank") 
     @Size(min=2,max = 50, message = "Name must be between 2 and 50 characters")
     private String name;

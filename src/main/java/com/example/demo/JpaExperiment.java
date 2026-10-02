@@ -50,14 +50,17 @@ public class JpaExperiment implements CommandLineRunner {
         //     System.out.println(student.getName()+" -> "+student.getDepartment().getName())
         // );
 
-        List<Object[]> results = studentService.testJPQLGroupBy();
-        for (Object[] result : results) {
-            System.out.println(
-                    result[0] + " -> " + result[1]
-            );
-        }
+        // List<Object[]> results = studentService.testJPQLGroupBy();
+        // for (Object[] result : results) {
+        //     System.out.println(
+        //             result[0] + " -> " + result[1]
+        //     );
+        // }
 
         // studentService.addTestStudents();
         
+        // 11 acid 
+        // studentService.testTransaction();
+        // studentService.methodA();
     }
 }
